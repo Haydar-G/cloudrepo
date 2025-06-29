@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .title {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title" id="heading-1">Heading 1</h1>
+    <h1 class="title" id="heading-2">Heading 2</h1>
+    <h1 class="title" id="heading-3">Heading 3</h1>
+    <h1 class="title" id="heading-4">Heading 4</h1>
+
+    <!--<script src="dom.js"></script>-->
+
+    <script>
+        let subHeading;
+        for (let i = 0; i < 10; i++) {
+            subHeading = document.createElement('h2');
+            subHeading.className = 'heading-2';
+            subHeading.id = 'hood';
+            subHeading.innerHTML = '<h2>this is a sub heading</h2>';
+            subHeading.style.fontSize = '70px';
+            subHeading.style.color = 'blue';
+            document.body.appendChild(subHeading);
+        }
+    </script>
+</body>
+
+</html>
